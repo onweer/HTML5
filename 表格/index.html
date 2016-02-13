@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>表格元素</title>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<td>张三</td>
+		<td>男</td>
+		<td>未婚</td>
+	</tr>
+	<tr>
+		<td>小芳</td>
+		<td>女</td>
+		<td>已婚</td>
+	</tr>
+</table>
+<br/>
+<table border="1" style="width:300px">
+	<tr>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>婚否</th>
+	</tr>
+	<tr>
+		<td>张三</td>
+		<td>男</td>
+		<td>未婚</td>
+	</tr>
+	<tr>
+		<td>小芳</td>
+		<td>女</td>
+		<td>已婚</td>
+	</tr>
+</table>
+<br/>
+<table border="1" style="width:300px">
+	<tr>
+		<th rowspan="5">基本情况</tr>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>婚否</th>
+	</tr>
+	<tr>
+		<td>张三</td>
+		<td>男</td>
+		<td>未婚</td>
+	</tr>
+	<tr>
+		<td>小芳</td>
+		<td>女</td>
+		<td>已婚</td>
+	</tr>
+	<tr>
+		<td colspan="3">统计:共两人</td>
+	</tr>
+</table>
+
+<br/>
+<table border="1" style="width:300px">
+	<caption>这是一个表格标题</caption>
+	<tfoot> <!--tfoot 表示表尾 -->
+		<tr>
+			<td colspan="3">统计:共两人</td>
+		</tr>
+	</tfoot>
+	<tr style="background:red">
+		<td>张三</td>
+		<td>男</td>
+		<td>未婚</td>
+	</tr>
+	<tr>
+		<td>小芳</td>
+		<td>女</td>
+		<td>已婚</td>
+	</tr>
+	<thead>	<!--thead 表示表头 -->
+		<tr>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>婚否</th>
+		</tr>
+	</thead>
+</table>
+
+<br/>
+<table border="1" style="width:300px">
+<colgroup style="background:white" span="1"></colgroup>
+<colgroup style="background:red" span="1"></colgroup>
+	<tr>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>婚否</th>
+	</tr>
+	<tr>
+		<td>张三</td>
+		<td>男</td>
+		<td>未婚</td>
+	</tr>
+	<tr>
+		<td>小芳</td>
+		<td>女</td>
+		<td>已婚</td>
+	</tr>
+</table>
+
+<br/>
+<table border="1" style="width:300px">
+<colgroup>
+	<col>  <!--占位符-->
+	<col style="background:red"></col>
+</colgroup>
+	<tr>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>婚否</th>
+	</tr>
+	<tr>
+		<td>张三</td>
+		<td>男</td>
+		<td>未婚</td>
+	</tr>
+	<tr>
+		<td>小芳</td>
+		<td>女</td>
+		<td>已婚</td>
+	</tr>
+</table>
+
+</body>
+</html>

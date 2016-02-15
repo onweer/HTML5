@@ -14,7 +14,20 @@ poster="img.png"></video> -->
 <!-- <video src="test.webm" width="660" height="660" controls preload="none"
 ></video> -->
 
-<video src="test.webm" width="660" height="660" controls preload="auto"></video>
+<!-- <video src="test.webm" width="660" height="660" controls preload="auto"></video> -->
 
+<!-- preload表示预加载 autoplau自动播放 src视频资源url controls视频播放控件 -->
+<video width="660" height="660" controls>
+	<source src="test.webm">
+	<source src="test.mp4">
+	<source src="test.ogg">
+	<object>实现flash插件的播放，IE9以下就屏蔽了</object>
+</video>
+
+<audio controls>
+	<source src="xxx.mp3">
+	<source src="xxx.m4a">
+	<source src="xxx.wav">
+</audio>
 </body>
 </html>

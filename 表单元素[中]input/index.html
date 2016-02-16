@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单元素[中] input type属性</title>
+</head>
+<body>
+<form>
+<!-- 默认text -->
+	<input type="text" size="10" maxlength="5"><br>
+	Readonly:<input type="text" value="Readonly" readonly>
+	<br>
+	list:<input type="text" list="abc">
+	<br>
+	required<input required>
+	<br>
+	password:<input type="password" placeholder="请输入密码"><br>
+	number:<input type="number" min="10" max="30" step="2"><br>
+	range:<input type="range" ><br>
+	date:<input type="date"><br><!--Chrome支持-->
+	month:<input type="month"><br>
+	color:<input type="color"><br>
+	<button type="submit">提交</button>
+</form>
+
+<datalist id="abc">
+<option>西瓜</option>
+<option value="2">香蕉</option>
+<option>橘子</option>
+<option label="梨子" value="梨子"></option>
+</datalist>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单元素[下]验证</title>
+</head>
+<body>
+	<form method="get" oninput="res.value = num1.valueAsNumber * num2.valueAsNumber">
+		选择框：<br>
+		<select name="vab" size="10" multiple="true">
+			<optgroup label="水果">
+				<option value="1">胡萝卜</option>
+				<option value="2" selected="">芹菜</option>
+				<option value="3">菠萝</option>
+			</optgroup>
+			<optgroup label="粗娘">
+				<option>小米</option>
+				<option>玉米</option>
+			</optgroup>
+		</select>
+		<br>
+		多行文本框：<br>
+		<textarea name="content" rows="10" cols="10" wrap>
+			哈哈
+		</textarea>
+		<br>
+
+		<!-- <input	type="number" id="num1"> X <input type="number" id="num2"> <output for="num1 num2" name="res"><br><br> -->
+		输入验证(正则表达式):
+		<input placeholder="请输入区号-座机号码" pattern="^[\d]{2,4}\-[\d]{6,8}$">
+		<br>
+		<button>提交</button>
+	</form>
+</body>
+</html>

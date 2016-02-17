@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*取消内外边距*/
+body,h1,ul{
+	margin: 0;
+	padding: 0;
+}
+/*清理掉ul的小圆点*/
+ul{
+	list-style: outside none none;
+}
+a{
+	/*取消下划线*/
+	text-decoration: none;
+}
+#nav{
+	width: 100%;
+	height: 70px;
+	background-color:#333;
+}
+
+#nav .center {
+	width: 1263px;
+	height: 70px;
+	margin: 0 auto;
+	/*background: #333;*/
+}
+/*H1可以让搜索引擎最好的抓住关键字！！！！！一个页面最好只有一个*/
+#nav .logo{
+	width: 240px;
+	height: 70px;
+	background-image: url(../img/logo.png);
+	/*把H1的文字移动出去*/
+	text-indent: -9999px;
+	/*让标题栏的ul可以浮动上来*/
+	float: left;
+
+}
+#nav .link{
+	width: 650px;
+	/*background-color: red;*/
+	height: 70px;
+	/*line-height 如果和height相等就可以达到垂直居中的效果*/
+	line-height: 70px;
+	/*文本颜色淡灰色*/
+	color: #eee;
+	/**/
+	float: right;
+}
+#nav .link li{
+	/*让标题栏的文字左浮动*/
+	width: 120px;
+	float: left;
+	/*文字居中*/
+	text-align: center;
+
+}
+
+#nav .link a{
+	color: #eee;
+	/*使标题栏右边的字 鼠标移动上去能捕捉到整个区块，而不仅仅是字*/
+	display: block;
+}
+
+#nav .link > a:hover,
+#nav .active a{
+	/*鼠标放上去变黑色*/
+	background-color: #000;
+}

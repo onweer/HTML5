@@ -14,8 +14,13 @@ a{
 }
 #header{
 	width: 100%;
+	/*当缩小到1263px后 不会自适应*/
+	min-width: 1263px;
 	height: 70px;
 	background-color:#333;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	position: relative;
+	z-index: 999;
 }
 
 #header .center {
@@ -64,4 +69,65 @@ a{
 #header .link a:hover,#header .active a{
 	/*鼠标放上去变黑色*/
 	background-color: #000;
+}
+
+
+#search {
+	width: 100%;
+	/*当缩小到1263px后 不会自适应*/
+	min-width: 1263px;
+	height: 800px;
+	background: url(../img/search.jpg) no-repeat center;
+	position: relative;
+}
+/*中间的搜索框 半透明 居中*/
+#search .center{
+	width: 600px;
+	height: 60px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -30px 0 0 -300px;
+	/*透明度*/
+	opacity: 0.6;
+	/*圆角*/
+	border-radius: 10px;
+
+}
+
+#search .search{
+	width: 446px;
+	height: 52px;
+	background-color: #fff;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	margin: -27px 0 0 -296px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 0 10px;
+	outline: none;
+
+}
+
+#search .button{
+	width: 120px;
+	height: 52px;
+	background-color: #eee;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	margin: -27px 0 0 175px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	outline: none;
+	/*鼠标上方去有手型*/
+	cursor: pointer;
+	font-weight: bold;
+
 }
